@@ -2,72 +2,60 @@
 <html lang="en" ng-app>
 <head>
 	<meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 	<title>Haron</title>
 </head>
 <body>
-	<div class="container">
-		<h1>Project title - <span>Total time: <strong>10</strong> hours <strong>22</strong> minutes <strong>21</strong> seconds</span></h1>
-		<div class="meta">
-			<p>Create date: 15.02.2015</p>
-			<p>Deadline: 15.02.2015</p>
-			<p>Author: Trubachov Oleksandr</p>
-		</div>
-		<div class="filter">Filter here</div>
-		<ul class="tasks">
-			<li class="item" data-priority="1">
-				<h2>Task caption</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="management">
-					<button class="start">Start</button>
-					<button class="stop">Stop</button>
-					<button class="complite">Complite</button>
-					<span>Time spend: 4h 00m 00s |</span>
-					<span>Create date: 05.12.2014 |</span>
-					<span class="deadline">Deadline: 20.12.2014</span>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-8">
+						<h1>My stream - <small><span>Total time: <strong>10</strong> hours <strong>22</strong> minutes <strong>21</strong> seconds</span></small></h1>
+						<div class="meta">
+							<p>Create date: 15.02.2015</p>
+							<p>Deadline: 15.02.2015</p>
+							<p>Author: Trubachov Oleksandr</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<button class="start btn btn-success">Add task</button>
+					</div>
 				</div>
-			</li>
-			<li class="item" data-priority="1">
-				<h2>Task caption</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="management">
-					<button class="start">Start</button>
-					<button class="stop">Stop</button>
-					<button class="complite">Complite</button>
-					<span>Time spend: 4h 00m 00s |</span>
-					<span>Create date: 05.12.2014 |</span>
-					<span class="deadline">Deadline: 20.12.2014</span>
+				<div class="filter">Filter here</div>
+				<div class="row">
+					
+					<!-- List of tasks -->
+					<div class="col-md-6">
+						<ul class="tasks">
+							<li class="item" data-priority="1">
+								<h3>There task caption There task caption There task caption</h3>
+								<div class="management">
+									<button class="start btn btn-info btn-xs">Add to work list</button>
+									<button class="start btn btn-success btn-xs">Start</button>
+									<button class="stop btn btn-danger btn-xs">Stop</button>
+									<button class="complite btn btn-default btn-xs">Complite</button>
+									<span>Create date: 05.12.2014 |</span>
+									<span class="deadline">Deadline: 20.12.2014</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Task full description -->
+					<div class="col-md-6">
+						<div class="details">
+							details
+						</div>
+					</div>
 				</div>
-			</li>
-			<li class="item" data-priority="1">
-				<h2>Task caption</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="management">
-					<button class="start">Start</button>
-					<button class="stop">Stop</button>
-					<button class="complite">Complite</button>
-					<span>Time spend: 4h 00m 00s |</span>
-					<span>Create date: 05.12.2014 |</span>
-					<span class="deadline">Deadline: 20.12.2014</span>
-				</div>
-			</li>
-			<li class="item" data-priority="1">
-				<h2>Task caption</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				<div class="management">
-					<button class="start">Start</button>
-					<button class="stop">Stop</button>
-					<button class="complite">Complite</button>
-					<span>Time spend: 4h 00m 00s |</span>
-					<span>Create date: 05.12.2014 |</span>
-					<span class="deadline">Deadline: 20.12.2014</span>
-				</div>
-			</li>
-		</ul>
-		<div class="details">
-			details
+			</div>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 </body>
 </html>
